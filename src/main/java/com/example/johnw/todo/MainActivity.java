@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         if(requestCode==2)
         {
             String message=data.getStringExtra("MESSAGE");
-            if(message!="0")
+            if(!message.equals("0"))
             {
             items.set(pos2,message);
             itemsAdapter.notifyDataSetChanged();

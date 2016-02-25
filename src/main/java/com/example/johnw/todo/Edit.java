@@ -19,7 +19,7 @@ public class Edit extends AppCompatActivity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     EditText editT = (EditText) findViewById(R.id.editText);
                     String itemText = editT.getText().toString();
-                    if(itemText==""){
+                    if(itemText.equals("")){
                         Intent intent = new Intent();
                         intent.putExtra("MESSAGE","0");
                     }
